@@ -1,0 +1,13 @@
+# Directories
+
+## IDEs
+.idea
+.vscode
+
+## App specific
+cache
+
+
+# Files
+
+.env
