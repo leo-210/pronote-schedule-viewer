@@ -5,7 +5,7 @@ and is directly connected to pronote thanks to
 [PronotePy](https://github.com/bain3/pronotepy).
 
 This was inspired by [Gilles Castel's](https://castel.dev/) workflow 
-(on [this post](https://castel.dev/post/lecture-notes-3/)). I highly recommend
+(on [this post](https://castel.dev/post/lecture-notes-3/#automatically-changing-the-active-course)). I highly recommend
 that you check his blog if you are interested by writing in 
 [LaTeX](https://en.wikipedia.org/wiki/LaTeX).
 
