@@ -171,6 +171,7 @@ if not args.ignore_vacation:
                 f"where=%22{academy}%22AND%22{str(now.year)}%22AND%20NOT%22Enseignants%22&"
                 "limit=20")
         results = r.json()["results"]
+        os.makedirs(cache_dir, exist_ok=True)
         try:
             with open(os.path.join(cache_dir, str(now.year) + academy), "wb") as f:
                 pickle.dump(results, f)
@@ -256,8 +257,13 @@ if not args.no_cache:
 
     cache_entry.count_increment()
 
-    with open(cache_path, "wb") as f:
-        pickle.dump(cache_entry, f)
+    os.makedirs(cache_dir, exist_ok=True)
+    try:
+        with open(cache_path, "wb") as f:
+            pickle.dump(cache_entry, f)
+    except IOError:
+        if verbose:
+            print("could not create lessons cache file")
 
 else:
     if verbose:
