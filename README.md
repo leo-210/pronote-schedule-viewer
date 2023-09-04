@@ -35,14 +35,14 @@ py -m pip install -r requirements.txt
 
 Check out the `--help` command to list all the possible arguments :
 ```
-python3 ./pronote_schedule_viewer --help
+python3 ./pronote_schedule_viewer.py --help
 ```
 
 ### Basics
 
 Run the command :
 ```
-python3 ./pronote_schedule_viewer --username <username> --password <password> --link <link>
+python3 ./pronote_schedule_viewer.py --username <username> --password <password> --link <link>
 ```
 Where `<username>` is your Pronote username and `<password>`is 
 your Pronote password. `<link>` is the link of the website you 
